@@ -1,12 +1,16 @@
 # jenkins-login-auto
-aplicação jenkins com autentificação automatizada
+ ###### Aplicação jenkins com autentificação automatizada
 
-Realizar o clone do repositorio.
+1 - Realizar o clone do repositorio. Dentro do repositório, rodar o comando:
 
-Dentro do repositório, rodar o comando:
-
-docker image build -t jppaiva/jenkins .
+> docker image build -t jppaiva/jenkins .
 
 Em seguida, rodar o comando:
 
-docker stack deploy -c jenkins.yml jenkins
+> docker stack deploy -c jenkins.yml jenkins
+
+Para teste, copiar e colar no navegador o endereço:
+
+> http://localhost:8080
+
+Aparecerá o painel do jenkins sem necessidade de login.
